@@ -13,13 +13,16 @@ BOT_NAME = 'PowerBall'
 
 SPIDER_MODULES = ['PowerBall.spiders']
 NEWSPIDER_MODULE = 'PowerBall.spiders'
+LOG_LEVEL='ERROR' 
+#임의로 key, value 삽임
+ITEM_PIPELINES = { 'PowerBall.pipelines.PowerballPipeline':300, }
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'PowerBall (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+#ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
